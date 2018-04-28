@@ -1,0 +1,52 @@
+html {
+   background: black;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+}
+
+body {
+   height: 100%;
+   font-size: 12px;
+   line-height: 1.2;
+}
+
+.outer {
+   margin:auto;
+   min-height: 100%;
+   max-width: 800px;
+   background-color: rgb(250,255,255);
+}
+
+.content {
+   margin: 0 1rem;
+}
+
+.content h4,
+.content h6,
+.content h5 {
+   margin-bottom: 0;
+}
+
+.content ul {
+   margin-top: 0;
+}
+
+body > div > div > div > div {
+   margin-left: .5rem;
+}
+
+#skills > .columns {
+   margin: 0 .5rem;
+}
+
+.content .column {
+   padding-top: 0;
+}
+
+.columns {
+   display: flex;
+   flex-wrap: wrap;
+}
