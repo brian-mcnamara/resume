@@ -42,6 +42,10 @@ body > div > div > div > div {
    margin: 0 .5rem;
 }
 
+#skills ul {
+   white-space: nowrap;
+}
+
 .content .column {
    padding-top: 0;
 }
