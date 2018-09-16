@@ -90,6 +90,32 @@ body > div > div > div > div {
   width: 100%;
 }
 
+.header {
+  position: relative;
+}
+
+.linkWrapper {
+  position: absolute;
+  margin: .5rem .75rem;
+  width: 90px;
+  text-align: center;
+}
+
+.linkWrapper.right {
+  right: 0;
+  top: 0;
+}
+
+.qrcode {
+  height: 50px;
+}
+
+@media only screen and (max-width: 650px) {
+    .linkWrapper {
+        display: none;
+    }
+}
+
 @media print {
   .togglebtn {
     display: none;
