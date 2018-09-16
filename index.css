@@ -69,3 +69,29 @@ body > div > div > div > div {
    margin-left: .25rem;
    flex: 1;
 }
+
+.expandable {
+  display: none;
+}
+
+.expandable.expand {
+  display:block;
+  margin: 0.5rem;
+  margin-right: 3rem;
+  background: rgba(0,0,0,.1);
+  padding : .25rem .5rem;
+}
+
+.hasExpandable:not(.expanded)::after {
+  content: '+';
+}
+
+.togglebtn {
+  width: 100%;
+}
+
+@media print {
+  .togglebtn {
+    display: none;
+  }
+}

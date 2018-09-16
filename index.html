@@ -4,9 +4,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
       <link rel="stylesheet" href="./index.css">
+      <script type="text/javascript" src="index.js" ></script>
       <title>Brian McNamara's résumé</title>
    </head>
    <body>
+      <button class="togglebtn" onclick="toggle()">Expand/Collapse additional content</button>
       <div class="outer">
          <div class="content">
             <div class="has-text-centered">
@@ -45,8 +47,28 @@
                      <li>
                         Designed and developed sites on Salesforce to demo customer use case.
                      </li>
-                     <li>Implemented CI/CD for team using Jenkins.</li>
-                     <li>Dockerized multiple services to improve versioning and deployment strategy.</li>
+                     <li>
+                       <span>Implemented CI/CD for team using Jenkins.</span>
+                       <div class="expandable">
+                         <span>
+                           Using GitHub webhooks and Jenkins allowed our team to implement CI/CD
+                           which improved developer productivity and developer workflow.
+                           This enabled us to run tests for each PR as well as build and deploy
+                           changes.
+                         </span>
+                       </div>
+                     </li>
+                     <li>
+                       <span>Dockerized multiple services to improve versioning and deployment strategy.</span>
+                       <div class="expandable">
+                         <span>
+                           Dockerizing our services allowed our team to package our services making it easy to run both
+                           locally as well in our production environment. Using Docker also allowed us to work across platforms
+                           and deploy easily multiple cloud providers. My work on this designed the docker file and tie it into
+                           our CI/CD system.
+                         </span>
+                       </div>
+                     </li>
                      <li>Developed Terraform to implement our production environment</li>
                      <li>Containerized the platform to run outside our internal datacenters</li>
                   </ul>
