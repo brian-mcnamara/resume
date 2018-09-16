@@ -69,8 +69,29 @@
                          </span>
                        </div>
                      </li>
-                     <li>Developed Terraform to implement our production environment</li>
-                     <li>Containerized the platform to run outside our internal datacenters</li>
+                     <li>
+                       <span>Developed Terraform to implement our production environment</span>
+                       <div class="expandable">
+                         <span>
+                           Switching to use Terraform to manage our environments has helped us
+                           declaratively define our environment. This has allowed us to take a majority of
+                           the ops out of our devops; enabling us to easilly create a dev, staging and production
+                           environments without need for us to create and setup the envrionments. Using Jenkins
+                           also enabled us to take the manual steps to apply Terraform out of the development process.
+                         </span>
+                       </div>
+                     </li>
+                     <li>
+                       <span>Containerized the platform to run outside our internal datacenters</span>
+                       <div class="expandable">
+                         <span>
+                           Salesforce application is run inside our own datacenter. We have a very hardcoded system to build and deploy
+                           which makes it hard to run outside our datacenters. For our teams use case, we want to run the app in environments
+                           outside our own. To make this happen I worked to dockerize the application to tie together our internal deployment with Docker.
+                           This has allowed us to build an image replicating the environment of our datacenter.
+                         </span>
+                       </div>
+                     </li>
                   </ul>
                </div>
                <div class="experence">
@@ -116,10 +137,45 @@
                   Related projects:
                </h4>
                <ul>
-                  <li>Owned IntelliJ implementation for the Salesforce project.</li>
-                  <li>Participated in company sponsored hackathons (ask me about it)</li>
+                  <li>
+                    <span>Owned IntelliJ implementation for the main Salesforce project.</span>
+                    <div class="expandable">
+                      <span>
+                        I <bold>love</bold> IntelliJ. Since switching from Eclipse to IntelliJ, I have grown to enjoy developing on it.
+                        When I first started using it, the setup involved to get the project running inside was quite tedious. The problem
+                        was no team owned the code that created the IntelliJ project generator and the code was becoming dated. From that
+                        point, I started rewriting it tieing it into our new build model enabling more features IntelliJ has to offer. I also
+                        created plugins to our build CLI to download,install and setup IntelliJ making it easier than ever to use IntelliJ.
+                        Since than I have been the sole maintainer of this code and have helped simplify the process for users to onboard.
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <span>Participated in company sponsored hackathons</span>
+                    <div class="expandable">
+                      <span>
+                        <ul>
+                          <li>Work on a team to implement the ability to modify the page layout from the Lightning App Builder</li>
+                          <li>Exposed internal API to the Salesforce public REST endpoints. Would help developers work with our platform</li>
+                          <li>Worked on exposing our internal attribute type system to allow external developers declare and build attribute types and their editors for use in the App Builder</li>
+                        </ul>
+                      </span>
+                    </div>
+                  </li>
                   <li>Created numerous projects to improve developer productivity.</li>
-                  <li>Developed Alexa home automation for entertainment system.</li>
+                  <li>
+                    <span>Developed Alexa home automation for entertainment system.</span>
+                    <div class="expandable">
+                      <span>
+                        I created a simple (multitenant) MQ adding oauth and access tokens that runs in Heroku. This service is based off of Spring.
+                        This allows the Alexa AWS lambda to authenticate and communicate with the MQ passing commands from the Alexa api to a simple json response.
+                        From there, I have a NodeJS application on a raspberrypi that connects to the service using an access token. The MQ will stream events
+                        recieved from Alexa allowing the pi to read and respond to commands. Such commands as "Turn on the TV", "Switch the TV to HDMI-3", and a few others
+                        will transform to using the Vizio and DirectTV REST endpoints that are available on the boxes.
+                        Note: I did this before Vizio came out with a Alexa integration.
+                      </span>
+                    </div>
+                  </li>
                </ul>
             </div>
             <div id="skills">
