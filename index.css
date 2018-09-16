@@ -94,4 +94,8 @@ body > div > div > div > div {
   .togglebtn {
     display: none;
   }
+  /*Make sure not to add + to printed copy */
+  .hasExpandable:not(.expanded)::after {
+    content: '';
+  }
 }
