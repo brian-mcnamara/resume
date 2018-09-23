@@ -101,7 +101,7 @@ body > div > div > div > div {
 
 .linkWrapper {
   margin: .5rem .75rem;
-  width: 90px;
+  width: 80px;
   text-align: center;
 }
 
@@ -127,5 +127,8 @@ body > div > div > div > div {
   /*Make sure not to add + to printed copy */
   .hasExpandable:not(.expanded)::after {
     content: '';
+  }
+  a {
+    color: inherit;
   }
 }
