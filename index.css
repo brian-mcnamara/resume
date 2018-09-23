@@ -114,7 +114,7 @@ body > div > div > div > div {
   height: 50px;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
     .linkWrapper {
         display: none;
     }
