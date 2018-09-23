@@ -84,6 +84,7 @@ body > div > div > div > div {
 
 .hasExpandable:not(.expanded)::after {
   content: '+';
+  font-weight: bold;
 }
 
 .togglebtn {
@@ -91,11 +92,14 @@ body > div > div > div > div {
 }
 
 .header {
-  position: relative;
+  display: flex;
+}
+
+.header > .headerContent {
+  flex: 1;
 }
 
 .linkWrapper {
-  position: absolute;
   margin: .5rem .75rem;
   width: 90px;
   text-align: center;
