@@ -38,8 +38,16 @@ function detachExpand() {
   });
 }
 
+function registerGuest() {
+  let url = 'https://visitortracker.herokuapp.com/hit';
+  let xhr = new XMLHttpRequest();
+  xhr.open('POST', url, true);
+  xhr.send(null);
+}
+
 var expanded = false;
 window.onload = function() {
+  registerGuest();
   attachExpand();
   document.querySelectorAll('.expandable').forEach(elem => {
     elem.parentElement.classList.add('hasExpandable')
