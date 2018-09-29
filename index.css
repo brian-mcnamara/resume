@@ -97,11 +97,13 @@ body > div > div > div > div {
 
 .header > .headerContent {
   flex: 1;
+  margin: auto;
 }
 
 .linkWrapper {
-  margin: .5rem .75rem;
-  width: 80px;
+  margin: .5rem 1.5rem;
+  width: 65px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -114,7 +116,7 @@ body > div > div > div > div {
   height: 50px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 510px) {
     .linkWrapper {
         display: none;
     }

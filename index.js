@@ -39,10 +39,14 @@ function detachExpand() {
 }
 
 function registerGuest() {
-  let url = 'https://visitortracker.herokuapp.com/hit';
-  let xhr = new XMLHttpRequest();
-  xhr.open('POST', url, true);
-  xhr.send(null);
+  let visited = window.localStorage.getItem("visited");
+  if (!visited){
+    let url = 'https://visitortracker.herokuapp.com/hit';
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url, true);
+    xhr.send(null);
+    //window.localStorage.setItem('visited', true);
+  }
 }
 
 var expanded = false;
