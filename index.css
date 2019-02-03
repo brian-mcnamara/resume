@@ -133,4 +133,11 @@ body > div > div > div > div {
   a {
     color: inherit;
   }
+  .outer {
+    background-color: white;
+  }
+
+  li {
+    page-break-inside: avoid;
+  }
 }
